@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/pdfCard"
+    android:backgroundTint="#23395d"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pdfImgCard"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="100dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#152238">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pdf_icon"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/PdfName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdfImgCard"
+        android:text="PDF Name"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:maxLines="1"
+        android:textStyle="normal"
+        android:textColor="@color/white"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

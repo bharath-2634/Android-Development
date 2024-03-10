@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#03254c">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/main_page_boarding_img"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/onBoardingText_1"
+            android:layout_marginTop="50dp"
+            android:textSize="25dp"
+            android:fontFamily="@font/wish"
+            android:textColor="@color/text_color"
+            android:text="Note App"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/onBoardingText_2"
+            android:fontFamily="@font/style_1"
+            android:layout_below="@+id/onBoardingText_1"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/text_color"
+            android:textSize="18dp"
+            android:text="Capture what's on your mind and\n get a remember later at the right\nplace and time"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/onBoardingCard"
+            android:layout_width="250dp"
+            android:layout_below="@+id/onBoardingText_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/text_color"
+            android:layout_height="60dp">
+            <TextView
+                android:textSize="20dp"
+                android:fontFamily="@font/box_bold"
+                android:text="Let's  Start"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

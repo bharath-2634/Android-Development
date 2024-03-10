@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallPaperActivity">
+
+    <ImageView
+        android:id="@+id/goBack"
+        android:layout_margin="7dp"
+        android:src="@drawable/ic_back"
+        android:layout_width="60dp"
+        android:layout_height="30dp"/>
+    <ImageView
+        android:id="@+id/wallPaperImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/goBack"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/setWallPaperImageBtn"
+        android:src="@drawable/ic_set_wall_paper"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#358856"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_download"
+        android:id="@+id/downloadImageBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="#358856"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

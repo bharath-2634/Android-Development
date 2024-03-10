@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="#152238">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_layout_bar"
+        android:layout_margin="20dp"
+        android:textSize="27dp"
+        android:text="i Notes"
+        android:textAlignment="center"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/main_layout_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:textSize="20dp"
+        android:text="Powered By"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:fontFamily="@font/wish"
+        android:textColor="#ff781f"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:textSize="20dp"
+        android:text="Bharath Android Dev"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:fontFamily="@font/wish"
+        android:textColor="#ff781f"/>
+</RelativeLayout>

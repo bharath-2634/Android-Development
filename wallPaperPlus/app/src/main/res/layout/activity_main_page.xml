@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/customToolBar"
+       android:background="#306948"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Wall Paper Plus"
+               android:textAlignment="center"
+               android:textColor="@color/white"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:layout_centerVertical="true"/>
+       </RelativeLayout>
+   </androidx.appcompat.widget.Toolbar>
+<ProgressBar
+    android:id="@+id/mainProgressBar"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainRecycler"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/customToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/previousBtn"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="#358856"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_previous"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:backgroundTint="#358856"
+            android:src="@drawable/ic_next" />
+    </LinearLayout>
+</RelativeLayout>
